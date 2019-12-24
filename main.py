@@ -60,6 +60,8 @@ def record():
     write(fullname, fs, myrecording)  # Saving your file
     shutil.copy(fullname, 'Sounds', follow_symlinks=True)  # copiing yout file to folder Sounds
     os.remove(fullname)
+    soundslist.append('./Sounds/' + fullname)#Add path to sound to soundlist
+
 
 
 if __name__ == '__main__':
